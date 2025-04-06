@@ -13,8 +13,8 @@ h1{
   }
 
   .nav-links {
-    list-style: none;
-    display: flex;
+    list-style:none;
+    display:flex;
     gap: 20px;
   }
   
@@ -28,6 +28,51 @@ h1{
     color: #00bcd4;
   }
 
+  .slider-container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  .slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider img {
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
   .nav-links li a::after {
     content: "";
     width: 0%;
