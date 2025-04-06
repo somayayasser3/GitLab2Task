@@ -13,8 +13,8 @@ h1{
   }
 
   .nav-links {
-    list-style: none;
-    display: flex;
+    list-style:circle;
+    display:contents;
     gap: 20px;
   }
   
